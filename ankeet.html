@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormist lugemine</title>
+    <script src="vormscript.js"></script>
+</head>
+<body>
+
+<h1>Vormist lugemine</h1>
+<form>
+    <label for="nimi">Eesnimi</label>
+    <input type="text" id="nimi" placeholder="Eesnimi" oninput="tekstKast()">
+    <div id="vastus"></div>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Vali sugu:</legend>
+        <input type="radio" id="mees" name="sugu" onchange="radioValik()">
+        <label for="mees">mees</label>
+        <br>
+        <input type="radio" id="naine" name="sugu" onchange="radioValik()">
+        <label for="naine">naine</label>
+        <div id="vastus2"></div>
+        <img src="" id="pilt">
+    </fieldset>
+    <br>
+    <label for="linn">Kust pärit sa oled?</label>
+    <select id="linn" onchange="selectValik()">
+        <option>Vali...</option>
+        <option value="Tallinn">Tallinn</option>
+        <option value="Tartu">Tartu</option>
+        <option value="Pärnu">Pärnu</option>
+        <option value="Tapa">Maardu</option>
+        <option value="Maardu">Maardu</option>
+    </select>
+    <div id="vastus3"></div>
+    <br>
+    <br>
+    <strong>Vali oma lemmikmuusika:</strong>
+    <br>
+    <input type="checkbox" id="jazz" value="jazz" onchange="checkboxValik()">
+    <label for="jazz">jazz</label>
+    <br>
+    <input type="checkbox" id="popp" value="popp" onchange="checkboxValik()">
+    <label for="popp">popp</label>
+    <br>
+    <input type="checkbox" id="metal" value="metal" onchange="checkboxValik()">
+    <label for="metal">metal</label>
+    <br>
+    <input type="checkbox" id="rock" value="rock" onchange="checkboxValik()">
+    <label for="rock">rock</label>
+    <br>
+    <input type="checkbox" id="tehnotrans" value="tehnotrans" onchange="checkboxValik()">
+    <label for="tehnotrans">tehnotrans</label>
+    <br>
+    <input type="checkbox" id="rep" value="rep" onchange="checkboxValik()">
+    <label for="rep">rep</label>
+    <br>
+    <div id="vastus4"></div>
+    <input type="reset" value="Puhasta" onclick="puhasta()">
+
+</form>
+</body>
+</html>
