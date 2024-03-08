@@ -1,0 +1,19 @@
+#tahvel{
+    background-color: mediumpurple;
+    width: 30%;
+    height: 20%;
+}
+h1{
+    background-color: lightskyblue;
+    border: solid 3pt lightpink;
+    border-radius: 50px;
+    text-align: center;
+    font-family: "Dubai";
+
+}
+input[type=button]{
+  background-color: aliceblue;
+    color: aquamarine;
+    padding: 20px 32px;
+    border: 0;
+}
