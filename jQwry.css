@@ -1,0 +1,9 @@
+#reede{
+    border: 1pt solid red;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    padding: 20px;
+    position: relative;
+    left:0
+}
